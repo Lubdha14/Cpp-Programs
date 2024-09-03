@@ -1,0 +1,202 @@
+//DAY2- ASSIGNMENT
+
+//Addition of 2 matrix
+#include <iostream> 
+using namespace std; 
+ 
+int main() 
+{ 
+ // Declaring 2D array 
+ int arr[3][3]; 
+ int a[3][3];
+ int sum = 0;
+ 
+ // Initialize 2D array using loop 
+ for (int i = 0; i <=2 ; i++) { 
+ for (int j = 0; j<=2; j++) { 
+ cin>>arr[i][j];
+ } 
+ 
+ } 
+ 
+// // Printing the element of 2D array 
+ for (int i = 0; i <=2 ; i++) { 
+ for (int j = 0; j<=2; j++) { 
+ cout<<arr[i][j];
+ } 
+ cout<<"\n";
+ } 
+ // Initialize 2D array using loop 
+ for (int i = 0; i <=2 ; i++) { 
+ for (int j = 0; j<=2; j++) { 
+ cin>>a[i][j];
+ } 
+ } 
+ 
+ // Printing the element of 2D array 
+ for (int i = 0; i <=2 ; i++) { 
+ for (int j = 0; j<=2; j++) { 
+ cout<<a[i][j];
+ } 
+ cout<<"\n"<<endl;
+ } 
+ for (int i = 0; i <=2 ; i++) { 
+ for (int j = 0; j<=2; j++) 
+ { 
+ 	sum = a[i][j]+arr[i][j];
+ 	cout<<"Sum of the matrix is"<<sum;
+ } 
+ cout<<"\n";
+ } 
+ return 0; 
+}
+
+// Square of all the element of array
+#include <iostream> 
+using namespace std; 
+int main() 
+{ 
+ int arr[3][3]; 
+ int a[3][3];
+ int sq;
+ for (int i = 0; i <=2 ; i++) { 
+ for (int j = 0; j<=2; j++) { 
+ cin>>arr[i][j];
+ } 
+}
+  for (int i = 0; i <=2 ; i++) { 
+ for (int j = 0; j<=2; j++) { 
+ cout<<arr[i][j];
+ } 
+ cout<<"\n";
+ } 
+  cout<<"Square- \n";
+ for (int i = 0; i <=2 ; i++) { 
+ for (int j = 0; j<=2; j++) {  
+ sq=arr[i][j]*arr[i][j];
+ cout<<sq<<" ";
+ } 
+ cout<<"\n";
+ } 
+}
+
+//Transpose of array
+
+#include <iostream> 
+using namespace std; 
+int main() 
+{ 
+ int arr[3][3]; 
+ int a[3][3];
+ int sq;
+ for (int i = 0; i <=2 ; i++) { 
+ for (int j = 0; j<=2; j++) { 
+ cin>>arr[i][j];
+ } 
+}
+  for (int i = 0; i <=2 ; i++) { 
+ for (int j = 0; j<=2; j++) { 
+ cout<<arr[i][j];
+ } 
+ cout<<"\n";
+ } 
+ cout<<"The Transpose of array is"<<endl;
+ for (int i = 0; i <=2 ; i++) { 
+ for (int j = 0; j<=2; j++) { 
+ cout<<arr[j][i];
+ } 
+ cout<<"\n";
+ } 
+} 
+
+
+
+#include<iostream>
+using namespace std;
+class book
+{
+	int id;
+	float p;
+ 	char n;
+ 	char a;
+ 	public:
+ 	void getdata(){
+ 	cout << "Enter Id : ";
+ 	cin >> id;
+ 	cout << "Enter Name : ";
+ 	cin >> n;
+ 	cout << "Enter Author : ";
+ 	cin >> a;
+ 	cout << "Enter prize : ";
+ 	cin >> p;
+
+}
+ 	void putdata();	
+};
+
+
+void book::putdata()
+{
+ cout << id << " ";
+ cout << n << " ";
+ cout << a << " ";
+ cout << p << " ";
+ cout << endl;
+}
+int main()
+{
+ book emp[2];
+ int i;
+ for(i = 0; i < 2; i++)
+ emp[i].getdata();
+ cout << "Books Data - " << endl;
+ for(i = 0; i < 2; i++)
+ emp[i].putdata();
+}
+
+
+
+
+#include<iostream>
+using namespace std;
+class Book
+{
+ int id;
+ float p;
+ string name;
+ string a;
+ public:
+ void getdata();
+ void putdata();
+};
+void Book::getdata()
+{
+ cout << "Enter Id : ";
+ cin >> id;
+ cout << "Enter name : ";
+ cin >> name;
+  cout << "Enter author: ";
+ cin >> a;
+ cout << "Enter price : ";
+ cin >> p;
+ 
+}
+void Book::putdata()
+{
+ cout << id << " ";
+ cout << p << " ";
+ cout << name << " ";
+ cout << a
+  << " ";
+ cout << endl;
+}
+int main()
+{
+ Book emp[10];
+ int i;
+ for(i = 0; i < 10; i++)
+ emp[i].getdata();
+ cout << "Book Data - " << endl;
+ for(i = 0; i < 10; i++)
+ emp[i].putdata();
+}
